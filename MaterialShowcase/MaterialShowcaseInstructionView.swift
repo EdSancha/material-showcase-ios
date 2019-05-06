@@ -105,7 +105,7 @@ public class MaterialShowcaseInstructionView: UIView {
     secondaryLabel.numberOfLines = 0
     
     secondaryLabel.frame = CGRect(x: 0,
-                                  y: primaryLabel.frame.height,
+                                  y: primaryLabel.frame.height + 5,
                                   width: getWidth(),
                                   height: 0)
     secondaryLabel.sizeToFitHeight()

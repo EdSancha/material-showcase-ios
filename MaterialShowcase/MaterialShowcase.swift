@@ -25,7 +25,7 @@ public class MaterialShowcase: UIView {
   let TARGET_HOLDER_RADIUS: CGFloat = 44
   let TEXT_CENTER_OFFSET: CGFloat = 44 + 20
   let INSTRUCTIONS_CENTER_OFFSET: CGFloat = 20
-  let LABEL_MARGIN: CGFloat = 40
+  let LABEL_MARGIN: CGFloat = 30
   let TARGET_PADDING: CGFloat = 20
   
   // Other default properties
@@ -410,7 +410,7 @@ extension MaterialShowcase {
     instructionView.secondaryText = secondaryText
     
     // Calculate x position
-    var xPosition = LABEL_MARGIN
+    var xPosition = targetCopyView.frame.minX + LABEL_MARGIN
     
     // Calculate y position
     var yPosition: CGFloat!
